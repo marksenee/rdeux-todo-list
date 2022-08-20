@@ -5,8 +5,6 @@ import IndexStyle from './css/IndexStyle';
 import ItemListStyle from './css/ItemListStyle';
 import ItemStyle from './css/ItemStyle';
 import CheckBtnStyle from './css/CheckBtnStyle';
-import About from '../../pages/About';
-
 
 function Todo({ todo, onRemoveTodo, onClickCheck }) {
     const { id, title, content, isDone } = todo;
