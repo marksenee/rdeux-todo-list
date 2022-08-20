@@ -4,20 +4,13 @@ import Header from "../components/header/Header";
 import List from "../components/list/List";
 
 import LayoutStyle from "../components/layout/css/LayoutStyle";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { addTodo, deleteTodo, checkTodo } from '../redux/modules/todos'
 
 function TodoList() {
 
+  // dispatch 변수 생성 
   const dispatch = useDispatch();
-  const { todos } = useSelector((state) => state.todos); // initialstate 안에 있는 todos를 가져온 것 
-
-  const data = useSelector((state) => {
-    console.log(state);
-    return state;
-  })
-  console.log(data);
-
 
   // 객체 형태로 두 input 태그의 name 속성값을 초기화 
   const [ inputs, setInputs ] = useState({
@@ -76,7 +69,7 @@ function TodoList() {
         onChange={onChangeHandler}
         onCreate={onClickHandler}
         />
-        <List todos={todos} 
+        <List 
           onRemoveTodo={onRemoveTodo} 
           onClickCheck={onClickCheck} />
     </LayoutStyle>

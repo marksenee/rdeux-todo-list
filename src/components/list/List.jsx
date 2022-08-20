@@ -6,7 +6,13 @@ import FormStyle from './css/FormStyle.jsx';
 import CheckStyle from './css/CheckStyle.jsx';
 import TitleStyle from './css/TitleStyle.jsx';
 
-function List({ todos, onRemoveTodo, onClickCheck }) {
+import { useSelector } from "react-redux";
+
+
+function List({ onRemoveTodo, onClickCheck }) {
+
+  const { todos } = useSelector((state) => state.todos); // initialstate 안에 있는 todos를 가져온 것 
+
   return (
     <>
       <FormStyle> 

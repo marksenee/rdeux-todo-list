@@ -75,6 +75,7 @@ const todos = (state = initialState, action) => {
                 ...state,
                 todos: state.todos.concat(action.todo)
             }
+            
         case DELETE_TODO:
             return {
                 ...state,
