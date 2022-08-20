@@ -1,13 +1,11 @@
 import React from 'react';
+import { useSelector } from "react-redux";
 
 import Todo from '../todo/Todo';
 
 import FormStyle from './css/FormStyle.jsx';
 import CheckStyle from './css/CheckStyle.jsx';
 import TitleStyle from './css/TitleStyle.jsx';
-
-import { useSelector } from "react-redux";
-
 
 function List({ onRemoveTodo, onClickCheck }) {
 

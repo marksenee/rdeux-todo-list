@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-import Home from "../pages/About";
+import About from "../pages/About";
 import TodoList from "../pages/TodoList";
 
 const Router = () => {
@@ -9,7 +9,8 @@ const Router = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<TodoList />} />
-        <Route path="about" element={<Home />} />
+        <Route path="about" element={<About />} />
+        <Route path="about/:id" element={<About />} />
       </Routes>
     </BrowserRouter>
   );
