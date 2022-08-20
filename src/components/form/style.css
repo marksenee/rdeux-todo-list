@@ -1,0 +1,29 @@
+.container {
+    margin: 0 auto;
+}
+
+.input {
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    border-color: transparent;
+    margin: 20px;
+    display: inline-block;
+    justify-content: center;
+}
+
+.span {
+    margin: 23px 0px 0px 15px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.btn {
+    width: 50px;
+    height: 30px;
+    background-color: black;
+    border-radius: 10px;
+    border-color: black;
+    color: white;
+    margin-top: 18px;
+}
