@@ -9,25 +9,27 @@ import NavBtnStyleStyle from "./css/NavBtnStyle";
 import TitleStyle from "./css/TitleStyle";
 
 function Detail({ todos }) {
-    const { id, title, content } = todos;
+  const { id, title, content } = todos;
 
-    //navigate 생성
-    const navigte = useNavigate(); 
+  //navigate 생성
+  const navigte = useNavigate();
 
-    return (
-        <DetailLayoutStyle>
-            <BoxStyle>
-                <DetailHeaderStyle>
-                    <TextStyle>ID : {id}</TextStyle>
-                    <NavBtnStyleStyle onClick={() => navigte(`/`)}>이전으로</NavBtnStyleStyle>
-                </DetailHeaderStyle>
-                <>
-                    <TitleStyle>{title}</TitleStyle>
-                    <TextStyle>{content}</TextStyle>
-                </>
-            </BoxStyle>
-        </DetailLayoutStyle>
-    );
+  return (
+    <DetailLayoutStyle>
+      <BoxStyle>
+        <DetailHeaderStyle>
+          <TextStyle>ID : {id}</TextStyle>
+          <NavBtnStyleStyle onClick={() => navigte(`/`)}>
+            이전으로
+          </NavBtnStyleStyle>
+        </DetailHeaderStyle>
+        <>
+          <TitleStyle>{title}</TitleStyle>
+          <TextStyle>{content}</TextStyle>
+        </>
+      </BoxStyle>
+    </DetailLayoutStyle>
+  );
 }
 
 export default Detail;
