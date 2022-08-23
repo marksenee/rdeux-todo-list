@@ -68,11 +68,11 @@ const initialState = {
 // 등록
 // 완료, 취소 상태
 
-const todos = (state = initialState, action) => {
+const todos_list = (state = initialState, action) => {
   switch (action.type) {
     case ADD_TODO:
       return {
-        ...state,
+        ...state, // 상태값은 불변 객체로 관리해야 하므로 수정할 때마다 전개연산자를 활용해 새로운 객체를 생성한다.
         todos: state.todos.concat(action.todo),
       };
 
@@ -94,4 +94,4 @@ const todos = (state = initialState, action) => {
 };
 
 // export default reducer
-export default todos;
+export default todos_list;
