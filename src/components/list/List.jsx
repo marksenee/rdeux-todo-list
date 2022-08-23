@@ -8,7 +8,7 @@ import CheckStyle from "./css/CheckStyle.jsx";
 import TitleStyle from "./css/TitleStyle.jsx";
 
 function List({ onRemoveTodo, onClickCheck }) {
-  const { todos } = useSelector((state) => state.todos_list); // todoss라는 이름을 가진 리듀서에 접근해서 todos객체를 가져오는 것
+  const { todos } = useSelector((state) => state.todos_list); // todos_list라는 이름을 가진 리듀서에 접근해서 todos객체를 가져오는 것
   console.log("확인", todos);
   return (
     <>

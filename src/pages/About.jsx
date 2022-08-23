@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom";
 import Detail from "../components/detail/Detail";
 
 function About() {
-  const { todos } = useSelector((state) => state.todos_list); // initialstate 안에 있는 todos를 가져온 것
+  const { todos } = useSelector((state) => state.todos_list); // todos_list라는 이름을 가진 리듀서에 접근해서 todos를 가져오는 것
 
   // 고유한 id 값 조회
   const param = useParams();
