@@ -22,7 +22,6 @@ function TodoList() {
   const { title, content } = inputs;
 
   const onChangeHandler = (event) => {
-    console.log(event.target.value);
     const { name, value } = event.target; //event.target에서 name과 value 추출
     console.log("name:", name, " [name]:", [name], " value:", value); //name: title  [name]: ['title']  value: "내가 입력하고 있는 값"
 
