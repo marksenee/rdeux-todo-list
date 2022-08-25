@@ -84,8 +84,9 @@ const todos_list = (state = initialState, action) => {
     case CHECK_TODO:
       return {
         ...state,
-        todos: state.todos.map((todo) =>
-          todo.id === action.id ? { ...todo, isDone: !todo.isDone } : todo
+        todos: state.todos.map(
+          (item) =>
+            item.id === action.id ? { ...item, isDone: !item.isDone } : item // for문처럼 돌린 item의 값들을 받아온 것
         ),
       };
     default:
